@@ -1,0 +1,42 @@
+.about {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.about__info {
+    align-self: flex-start;
+    margin-left: 20px;
+}
+
+.about__title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.about__description {
+    text-align: justify;
+    padding: 50px 0;
+}
+
+.about__button {
+    display: flex;
+    justify-content: space-around;
+
+    a {
+        color: #333333;
+        padding: 10px 15px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
+        transition: all 0.6s cubic-bezier(0.01, 1.29, 0.66, 0.69);
+
+        &:hover {
+            background-color: #333333;
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+    }
+}

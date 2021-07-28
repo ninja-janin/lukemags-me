@@ -1,0 +1,35 @@
+.sns {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: block;
+    // border: 1px solid #ffffff;
+
+    &:hover {
+        &:before {
+            transform: scale(1.2);
+            transform-origin: center;
+        }
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        background: url("./../../images/sns/github.svg") no-repeat center;
+        background-size: contain;
+        inset: 0;
+        transition: all 0.3s cubic-bezier(0.01, 1.29, 0.66, 0.69);
+    }
+
+    &.sns--link-in {
+        &:before {
+            background: url("./../../images/sns/linkedIn.svg") no-repeat center;
+        }
+    }
+
+    &.sns--gitlab {
+        &:before {
+            background: url("./../../images/sns/gitlab.svg") no-repeat center;
+        }
+    }
+}
